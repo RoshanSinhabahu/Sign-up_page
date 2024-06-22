@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "poppins";
+    src: url('Poppins-Regular.woff');
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*{
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+.form-signup{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px -10px #ffffff;
+}
+.head{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#f0ffff;
+    text-shadow: 0 0 15px #000000;
+}
+.entryarea{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+input{
+    position: absolute;
+    width: 90%;
+    outline: none;
+    font-size: 1.1em;
+    padding: 0 20px;
+    line-height: 40px;
+    border-bottom:2px solid #f0ffff7f;
+    border-top:2px solid transparent;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+.labelline{
+    position: absolute;
+    font-size: 17px;
+    color: #f0ffff;
+    padding: 0 25px;
+    margin: 0 20px;
+    transition: 0.2s ease;
+    }
+input:focus,
+input:valid{
+    color:#f0ffff;
+    border: 3px solid #f0ffff;
+    border-bottom:3px solid #f0ffff;
+    border-top:2px solid transparent;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: #ffffff;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-18px,-16px) scale(0.88);
+    z-index: 111111;
+}
+.buttonarea{
+    display: flex;
+    justify-content: center;
+}
+button{
+    color:#f0ffff;
+    background-color: transparent;
+    border: #f0ffff solid 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 5px 20px 5px 20px;
+    margin: 0 10px 0 10px;
+}
+button:hover{
+    color:#f0ffff;
+    background-color: rgba(255, 255, 255, 0.036);
+    border: #f0ffff solid 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 5px 20px 5px 20px;
+    margin: 0 10px 0 10px;
+}
+button:active{
+    color:#f0ffff;
+    background-color: #d5d5d57e;
+    border: #f0ffff solid 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 5px 20px 5px 20px;
+    margin: 0 10px 0 10px;
+}

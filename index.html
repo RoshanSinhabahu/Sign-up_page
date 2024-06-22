@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="form-signup">
+        <div class="head">Sign-up</div>
+        <form id="form1" action="#.php">
+            <div class="entryarea">
+                <input required type="text" id="name" style="text-transform:capitalize" title=""> 
+                <div class="labelline">Enter your name</div>
+            </div>
+            <div class="entryarea">
+                <input required type="number" id="age" required title="">
+                <div class="labelline">Enter your age</div>
+            </div>
+            <div class="entryarea">
+                <input required type="text" id="email" required title="">
+                <div class="labelline">Enter your email</div>
+            </div>
+            <div class="entryarea">
+                <input required type="password" id="password" required title="">
+                <div class="labelline">Enter your password</div>
+            </div>
+            <div class="entryarea">
+                <input required type="password" id="confpassword" required title="">
+                <div class="labelline">Confirm your password</div>
+            </div>
+            <div class="buttonarea">
+                <button type="button" onclick="validateForm()">Submit</button>
+                <button type="submit" onclick="ClearForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
